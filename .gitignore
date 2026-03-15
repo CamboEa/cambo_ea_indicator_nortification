@@ -1,3 +1,6 @@
+# Legacy (moved to root)
+.qodo/
+
 # Dependencies
 node_modules/
 
@@ -22,3 +25,4 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+.vercel
