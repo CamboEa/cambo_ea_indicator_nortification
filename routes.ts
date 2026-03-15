@@ -6,7 +6,8 @@ import { sendTelegram } from "./telegram";
 import { WEBHOOK_SECRET } from "./config";
 
 export function registerRoutes(app: Express): void {
-  app.get("/", (_req: Request, res: Response) => {
+  // API info (root / serves public/index.html via static)
+  app.get("/api", (_req: Request, res: Response) => {
     res.json({
       status: "running",
       service: "Signal Master Pro — Telegram Relay (TypeScript)",
